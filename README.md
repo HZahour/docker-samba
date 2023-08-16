@@ -1,0 +1,1 @@
+By following the instruction of this link (https://hub.docker.com/r/hzahour/samba), you can now use the Samba server from a docker container.
