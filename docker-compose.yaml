@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  samba:
+    image: hzahour/samba
+
+    container_name: samba
+    hostname: samba
+
+    restart: unless-stopped
+
+    ports:
+      - '445:445'
+
+    networks:
+      - samba
+
+    volumes:
+      - "samba:/samba"
+
+networks:
+  samba:
+    name: samba
+    external: true
+
+volumes:
+  samba:
+    external: true
